@@ -7,15 +7,7 @@ import ObjectiveEntry from "./components/objectiveEntry/ObjectiveEntry";
 function App() {
   const [objectives, setObjectives] = useState<string[]>([]);
 
-  return (
-    <AppContainer>
-      <AppHeader>To-Do List</AppHeader>
-      <ObjectiveEntry setObjectives={setObjectives} />
-      {objectives.map((item) => (
-        <Objective title={item} />
-      ))}
-    </AppContainer>
-  );
+  return <AppContainer></AppContainer>;
 }
 
 export default App;

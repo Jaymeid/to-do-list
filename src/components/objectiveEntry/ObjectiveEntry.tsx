@@ -20,16 +20,7 @@ const ObjectiveEntry = ({ setObjectives }: ObjectiveEntryProps) => {
     }
   };
 
-  return (
-    <StyledFlexContainer>
-      <TextBoxEntry
-        placeholder="Enter your objective..."
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <AddButton onClick={handleAddObjective}>Add</AddButton>
-    </StyledFlexContainer>
-  );
+  return <StyledFlexContainer></StyledFlexContainer>;
 };
 
 export default ObjectiveEntry;

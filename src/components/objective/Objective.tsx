@@ -12,10 +12,5 @@ interface ObjectiveProps {
 export default function Objective({ title }: ObjectiveProps) {
   const [isCompleted, setIsCompleted] = useState(false);
 
-  return (
-    <StyledFlexContainer>
-      <CircularSelectBox onClick={() => setIsCompleted((prev) => !prev)} />
-      <ToDoText className={isCompleted ? "completed" : ""}>{title}</ToDoText>
-    </StyledFlexContainer>
-  );
+  return <StyledFlexContainer></StyledFlexContainer>;
 }
